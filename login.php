@@ -12,5 +12,6 @@
         <input type="password" id="password" name="password" required><br><br>
         <input type="submit" name="login" value="Zaloguj">
     </form>
+    <a href="register.php" class="text-center">Nie masz konta? Zarejestruj się</a>
 </body>
 </html>
