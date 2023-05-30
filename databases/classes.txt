@@ -1,0 +1,15 @@
+CREATE TABLE Classes (
+    ClassID INT PRIMARY KEY AUTO_INCREMENT,
+    ClassName VARCHAR(5),
+    TeacherID INT,
+    FOREIGN KEY (TeacherID) REFERENCES Teachers(TeacherID)
+);
+
+INSERT INTO Classes (ClassName, TeacherID)
+VALUES
+    ('1A', 1),
+    ('1B', 2),
+    ('2A', 3),
+    ('2B', 4),
+    ('3A', 5),
+    ('3B', 6);
