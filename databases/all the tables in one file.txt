@@ -78,3 +78,57 @@ VALUES
     (5, 28, 13, '2023-05-28'),
     (3, 29, 14, '2023-05-29'),
     (6, 30, 15, '2023-05-30');
+
+
+INSERT INTO Teachers (FirstName, LastName, Gender, Address, Password)
+VALUES
+    ('Michael', 'Brown', 'Male', '111 Pine St', 'teacherpass4'),
+    ('Emma', 'Taylor', 'Female', '222 Cedar Rd', 'teacherpass5'),
+    ('William', 'Johnson', 'Male', '333 Oak St', 'teacherpass6');
+
+INSERT INTO Students (FirstName, LastName, Gender, Address, Password)
+VALUES
+    ('Olivia', 'Miller', 'Female', '2323 Elm St', 'studentpass4'),
+    ('Noah', 'Garcia', 'Male', '2525 Maple Ave', 'studentpass5'),
+    ('Sophia', 'Davis', 'Female', '2727 Pine St', 'studentpass6');
+
+INSERT INTO Teachers (FirstName, LastName, Gender, Address, Password)
+VALUES
+    ('David', 'Clark', 'Male', '444 Birch Ln', 'teacherpass7'),
+    ('Sophia', 'Lopez', 'Female', '555 Oakwood Dr', 'teacherpass8'),
+    ('Daniel', 'Martinez', 'Male', '666 Elmwood Ave', 'teacherpass9'),
+    ('Emily', 'Gonzalez', 'Female', '777 Maplewood Blvd', 'teacherpass10'),
+    ('Ethan', 'Anderson', 'Male', '888 Pinecrest Ct', 'teacherpass11'),
+    ('Mia', 'Moore', 'Female', '999 Cedarwood Ave', 'teacherpass12'),
+    ('Aiden', 'Harris', 'Male', '1010 Birch St', 'teacherpass13'),
+    ('Ava', 'Lee', 'Female', '1111 Elm Rd', 'teacherpass14'),
+    ('Logan', 'Wilson', 'Male', '1212 Maple Ave', 'teacherpass15'),
+    ('Harper', 'Taylor', 'Female', '1313 Pine St', 'teacherpass16');
+
+INSERT INTO Students (FirstName, LastName, Gender, Address, Password)
+VALUES
+    ('Elijah', 'Thomas', 'Male', '1414 Oak St', 'studentpass7'),
+    ('Scarlett', 'White', 'Female', '1515 Elm Rd', 'studentpass8'),
+    ('Benjamin', 'Harris', 'Male', '1616 Maple Ave', 'studentpass9'),
+    ('Chloe', 'Walker', 'Female', '1717 Pine St', 'studentpass10'),
+    ('Henry', 'Young', 'Male', '1818 Oakwood Dr', 'studentpass11'),
+    ('Grace', 'Scott', 'Female', '1919 Elm St', 'studentpass12'),
+    ('Jackson', 'Wright', 'Male', '2020 Maple Rd', 'studentpass13'),
+    ('Lily', 'Lewis', 'Female', '2121 Pine Ave', 'studentpass14'),
+    ('Sebastian', 'King', 'Male', '2222 Oakwood Ct', 'studentpass15'),
+    ('Zoe', 'Green', 'Female', '2323 Elm Rd', 'studentpass16');
+
+INSERT INTO Students (FirstName, LastName, Gender, Address, Password)
+VALUES
+    ('Liam', 'Rodriguez', 'Male', '2424 Pine St', 'studentpass17'),
+    ('Olivia', 'Hernandez', 'Female', '2525 Oakwood Dr', 'studentpass18'),
+    ('Noah', 'Gonzalez', 'Male', '2626 Elm Rd', 'studentpass19'),
+    ('Emma', 'Smith', 'Female', '2727 Maple Ave', 'studentpass20'),
+    ('Oliver', 'Lopez', 'Male', '2828 Pinecrest Ct', 'studentpass21'),
+    ('Ava', 'Garcia', 'Female', '2929 Cedarwood Ave', 'studentpass22'),
+    ('Elijah', 'Rivera', 'Male', '3030 Birch St', 'studentpass23'),
+    ('Charlotte', 'Moore', 'Female', '3131 Elm Rd', 'studentpass24'),
+    ('James', 'Clark', 'Male', '3232 Maple Ave', 'studentpass25'),
+    ('Sophia', 'Anderson', 'Female', '3333 Pine St', 'studentpass26');
+
+
