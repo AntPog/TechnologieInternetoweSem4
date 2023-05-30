@@ -5,7 +5,7 @@
 </head>
 <body>
     <h2>Rejestracja</h2>
-    <form action="register.php" method="post">
+    <form action="reg_con.php" method="post">
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="Imię" name="firstName">
           <div class="input-group-append">
