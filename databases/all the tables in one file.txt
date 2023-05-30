@@ -125,4 +125,17 @@ VALUES
     (3, 15, 15, '2023-05-15'),
     (6, 16, 1, '2023-05-16');
 
+INSERT INTO Students (FirstName, LastName, Gender, Address, Password)
+VALUES
+    ('Alex', 'Taylor', 'Non-binary', '3434 Oakwood Dr', 'studentpass27'),
+    ('Charlie', 'Lee', 'Non-binary', '3535 Elm St', 'studentpass28'),
+    ('Taylor', 'Smith', 'Non-binary', '3636 Maple Ave', 'studentpass29'),
+    ('Jordan', 'Garcia', 'Non-binary', '3737 Pine St', 'studentpass30'),
+    ('Sawyer', 'Jones', 'Non-binary', '3838 Oakwood Dr', 'studentpass31'),
+    ('Riley', 'Miller', 'Non-binary', '3939 Elm Rd', 'studentpass32'),
+    ('Casey', 'Wilson', 'Non-binary', '4040 Maple Ave', 'studentpass33'),
+    ('Finley', 'Brown', 'Non-binary', '4141 Pine St', 'studentpass34'),
+    ('Jamie', 'Davis', 'Non-binary', '4242 Oak St', 'studentpass35'),
+    ('Avery', 'Thomas', 'Non-binary', '4343 Elmwood Ave', 'studentpass36');
+
 
