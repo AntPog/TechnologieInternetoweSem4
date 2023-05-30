@@ -18,7 +18,8 @@ if (isset($_SESSION["user"])) {
     <div class="container">
         <?php
         if (isset($_POST["submit"])) {
-           $fullName = $_POST["fullname"];
+           $fullName = $_POST["firstName"];
+           $lastName = $_POST["lastName"];
            $email = $_POST["email"];
            $password = $_POST["password"];
            $passwordRepeat = $_POST["repeat_password"];
@@ -33,8 +34,8 @@ if (isset($_SESSION["user"])) {
            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             array_push($errors, "Email is not valid");
            }
-           if (strlen($password)<8) {
-            array_push($errors,"Password must be at least 8 charactes long");
+           if (strlen($password)<1) {
+            array_push($errors,"Password must be at least 8 charactes long"); //potem zmienic znowu na 8 ale debugging  XDD
            }
            if ($password!==$passwordRepeat) {
             array_push($errors,"Password does not match");
@@ -52,11 +53,11 @@ if (isset($_SESSION["user"])) {
             }
            }else{
             
-            $sql = "INSERT INTO students (LastName, email, password) VALUES ( ?, ?, ? )";
+            $sql = "INSERT INTO students (FirstName, LastName, email, password) VALUES (?, ?, ?, ? )";
             $stmt = mysqli_stmt_init($conn);
             $prepareStmt = mysqli_stmt_prepare($stmt,$sql);
             if ($prepareStmt) {
-                mysqli_stmt_bind_param($stmt,"sss",$fullName, $email, $passwordHash);
+                mysqli_stmt_bind_param($stmt,"sss",$fullName,$lastName, $email, $passwordHash);
                 mysqli_stmt_execute($stmt);
                 echo "<div class='alert alert-success'>You are registered successfully.</div>";
             }else{
@@ -69,7 +70,10 @@ if (isset($_SESSION["user"])) {
         ?>
         <form action="registration.php" method="post">
             <div class="form-group">
-                <input type="text" class="form-control" name="fullname" placeholder="Full Name:">
+                <input type="text" class="form-control" name="firstName" placeholder="Imie:">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="lastName" placeholder="Nazwisko:">
             </div>
             <div class="form-group">
                 <input type="emamil" class="form-control" name="email" placeholder="Email:">
