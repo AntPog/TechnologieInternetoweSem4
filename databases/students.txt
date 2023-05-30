@@ -1,0 +1,14 @@
+CREATE TABLE Students (
+    StudentID INT PRIMARY KEY AUTO_INCREMENT,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Gender VARCHAR(20),
+    Address VARCHAR(100),
+    Password VARCHAR(50)
+);
+
+INSERT INTO Students (FirstName, LastName, Gender, Address, Password)
+VALUES
+    ('Liam', 'Smith', 'Male', '1718 Oakwood Dr', 'studentpass1'),
+    ('Isabella', 'Johnson', 'Female', '1920 Maplewood Blvd', 'studentpass2'),
+    ('James', 'Brown', 'Male', '2122 Pinecrest Ct', 'studentpass3');
