@@ -5,7 +5,7 @@
 </head>
 <body>
     <h2>Rejestracja</h2>
-    <form action="register.php" method="post">
+    <form action="reg_con.php" method="post">
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="Imię" name="firstName">
           <div class="input-group-append">
@@ -82,16 +82,17 @@
             <div class="icheck-primary">
               <input type="checkbox" id="agreeTerms" name="terms" value="agree">
               <label for="agreeTerms">
-              I agree to the <a href="#">terms</a>
+              Zgadzam się na <a href="#">warunki regulaminu</a>
               </label>
             </div>
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Register</button>
+            <button type="submit" class="btn btn-primary btn-block">Zarejestruj się</button>
           </div>
           <!-- /.col -->
         </div>
       </form>
+      <a href="login.php" class="text-center">Zaloguj się</a>
 </body>
 </html>
