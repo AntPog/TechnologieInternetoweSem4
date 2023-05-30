@@ -4,7 +4,8 @@ CREATE TABLE Teachers (
     LastName VARCHAR(50),
     Gender VARCHAR(20),
     Address VARCHAR(100),
-    Password VARCHAR(50)
+    Password VARCHAR(50),
+    Email VARCHAR(100)
 );
 
 CREATE TABLE Students (
@@ -13,8 +14,71 @@ CREATE TABLE Students (
     LastName VARCHAR(50),
     Gender VARCHAR(20),
     Address VARCHAR(100),
-    Password VARCHAR(50)
+    Password VARCHAR(50),
+    Email VARCHAR(100)
 );
+
+-- Example data for Teachers
+INSERT INTO Teachers (FirstName, LastName, Gender, Address, Password, Email)
+VALUES
+    ('John', 'Smith', 'Male', '123 Main St', 'teacherpass1', 'john.smith@example.com'),
+    ('Jane', 'Doe', 'Female', '456 Elm St', 'teacherpass2', 'jane.doe@example.com'),
+    ('Alex', 'Johnson', 'Non-binary', '789 Oak St', 'teacherpass3', 'alex.johnson@example.com');
+
+-- Example data for Students
+INSERT INTO Students (FirstName, LastName, Gender, Address, Password, Email)
+VALUES
+    ('Liam', 'Smith', 'Male', '1718 Oakwood Dr', 'studentpass1', 'liam.smith@example.com'),
+    ('Isabella', 'Johnson', 'Female', '1920 Maplewood Blvd', 'studentpass2', 'isabella.johnson@example.com'),
+    ('James', 'Brown', 'Male', '2122 Pinecrest Ct', 'studentpass3', 'james.brown@example.com');
+
+-- Additional Teachers
+INSERT INTO Teachers (FirstName, LastName, Gender, Address, Password, Email)
+VALUES
+    ('Michael', 'Brown', 'Male', '111 Pine St', 'teacherpass4', 'michael.brown@example.com'),
+    ('Emma', 'Taylor', 'Female', '222 Cedar Rd', 'teacherpass5', 'emma.taylor@example.com'),
+    ('William', 'Johnson', 'Male', '333 Oak St', 'teacherpass6', 'william.johnson@example.com'),
+    ('David', 'Clark', 'Male', '444 Birch Ln', 'teacherpass7', 'david.clark@example.com'),
+    ('Sophia', 'Lopez', 'Female', '555 Oakwood Dr', 'teacherpass8', 'sophia.lopez@example.com'),
+    ('Daniel', 'Martinez', 'Male', '666 Elmwood Ave', 'teacherpass9', 'daniel.martinez@example.com'),
+    ('Emily', 'Gonzalez', 'Female', '777 Maplewood Blvd', 'teacherpass10', 'emily.gonzalez@example.com'),
+    ('Ethan', 'Anderson', 'Male', '888 Pinecrest Ct', 'teacherpass11', 'ethan.anderson@example.com'),
+    ('Mia', 'Moore', 'Female', '999 Cedarwood Ave', 'teacherpass12', 'mia.moore@example.com'),
+    ('Aiden', 'Harris', 'Male', '1010 Birch St', 'teacherpass13', 'aiden.harris@example.com'),
+    ('Ava', 'Lee', 'Female', '1111 Elm Rd', 'teacherpass14', 'ava.lee@example.com'),
+    ('Logan', 'Wilson', 'Male', '1212 Maple Ave', 'teacherpass15', 'logan.wilson@example.com'),
+    ('Harper', 'Taylor', 'Female', '1313 Pine St', 'teacherpass16', 'harper.taylor@example.com'),
+    ('Oliver', 'Smith', 'Male', '1414 Oak St', 'teacherpass17', 'oliver.smith@example.com'),
+    ('Charlotte', 'Davis', 'Female', '1515 Elm Rd', 'teacherpass18', 'charlotte.davis@example.com'),
+    ('Henry', 'Johnson', 'Male', '1616 Maple Ave', 'teacherpass19', 'henry.johnson@example.com');
+
+-- Additional Students
+INSERT INTO Students (FirstName, LastName, Gender, Address, Password, Email)
+VALUES
+    ('Olivia', 'Miller', 'Female', '2323 Elm St', 'studentpass4', 'olivia.miller@example.com'),
+    ('Noah', 'Garcia', 'Male', '2525 Maple Ave', 'studentpass5', 'noah.garcia@example.com'),
+    ('Sophia', 'Davis', 'Female', '2727 Pine St', 'studentpass6', 'sophia.davis@example.com'),
+    ('Elijah', 'Thomas', 'Male', '1414 Oak St', 'studentpass7', 'elijah.thomas@example.com'),
+    ('Scarlett', 'White', 'Female', '1515 Elm Rd', 'studentpass8', 'scarlett.white@example.com'),
+    ('Benjamin', 'Harris', 'Male', '1616 Maple Ave', 'studentpass9', 'benjamin.harris@example.com'),
+    ('Chloe', 'Walker', 'Female', '1717 Pine St', 'studentpass10', 'chloe.walker@example.com'),
+    ('Henry', 'Young', 'Male', '1818 Oakwood Dr', 'studentpass11', 'henry.young@example.com'),
+    ('Grace', 'Scott', 'Female', '1919 Elm St', 'studentpass12', 'grace.scott@example.com'),
+    ('Jackson', 'Wright', 'Male', '2020 Maple Rd', 'studentpass13', 'jackson.wright@example.com'),
+    ('Lily', 'Lewis', 'Female', '2121 Pine Ave', 'studentpass14', 'lily.lewis@example.com'),
+    ('Sebastian', 'King', 'Male', '2222 Oakwood Ct', 'studentpass15', 'sebastian.king@example.com'),
+    ('Zoe', 'Green', 'Female', '2323 Elm Rd', 'studentpass16', 'zoe.green@example.com'),
+    ('Liam', 'Rodriguez', 'Male', '2424 Pine St', 'studentpass17', 'liam.rodriguez@example.com'),
+    ('Olivia', 'Hernandez', 'Female', '2525 Oakwood Dr', 'studentpass18', 'olivia.hernandez@example.com'),
+    ('Noah', 'Gonzalez', 'Male', '2626 Elm Rd', 'studentpass19', 'noah.gonzalez@example.com'),
+    ('Emma', 'Smith', 'Female', '2727 Maple Ave', 'studentpass20', 'emma.smith@example.com'),
+    ('Oliver', 'Lopez', 'Male', '2828 Pinecrest Ct', 'studentpass21', 'oliver.lopez@example.com'),
+    ('Ava', 'Garcia', 'Female', '2929 Cedarwood Ave', 'studentpass22', 'ava.garcia@example.com'),
+    ('Elijah', 'Rivera', 'Male', '3030 Birch St', 'studentpass23', 'elijah.rivera@example.com'),
+    ('Charlotte', 'Moore', 'Female', '3131 Elm Rd', 'studentpass24', 'charlotte.moore@example.com'),
+    ('James', 'Clark', 'Male', '3232 Maple Ave', 'studentpass25', 'james.clark@example.com'),
+    ('Sophia', 'Anderson', 'Female', '3333 Pine St', 'studentpass26', 'sophia.anderson@example.com');
+
 
 CREATE TABLE Classes (
     ClassID INT PRIMARY KEY AUTO_INCREMENT,
@@ -33,69 +97,6 @@ CREATE TABLE Grades (
     FOREIGN KEY (TeacherID) REFERENCES Teachers(TeacherID)
 );
 
-INSERT INTO Teachers (FirstName, LastName, Gender, Address, Password)
-VALUES
-    ('John', 'Smith', 'Male', '123 Main St', 'teacherpass1'),
-    ('Jane', 'Doe', 'Female', '456 Elm St', 'teacherpass2'),
-    ('Alex', 'Johnson', 'Non-binary', '789 Oak St', 'teacherpass3');
-
-INSERT INTO Students (FirstName, LastName, Gender, Address, Password)
-VALUES
-    ('Liam', 'Smith', 'Male', '1718 Oakwood Dr', 'studentpass1'),
-    ('Isabella', 'Johnson', 'Female', '1920 Maplewood Blvd', 'studentpass2'),
-    ('James', 'Brown', 'Male', '2122 Pinecrest Ct', 'studentpass3');
-
-
-INSERT INTO Teachers (FirstName, LastName, Gender, Address, Password)
-VALUES
-    ('Michael', 'Brown', 'Male', '111 Pine St', 'teacherpass4'),
-    ('Emma', 'Taylor', 'Female', '222 Cedar Rd', 'teacherpass5'),
-    ('William', 'Johnson', 'Male', '333 Oak St', 'teacherpass6');
-
-INSERT INTO Students (FirstName, LastName, Gender, Address, Password)
-VALUES
-    ('Olivia', 'Miller', 'Female', '2323 Elm St', 'studentpass4'),
-    ('Noah', 'Garcia', 'Male', '2525 Maple Ave', 'studentpass5'),
-    ('Sophia', 'Davis', 'Female', '2727 Pine St', 'studentpass6');
-
-INSERT INTO Teachers (FirstName, LastName, Gender, Address, Password)
-VALUES
-    ('David', 'Clark', 'Male', '444 Birch Ln', 'teacherpass7'),
-    ('Sophia', 'Lopez', 'Female', '555 Oakwood Dr', 'teacherpass8'),
-    ('Daniel', 'Martinez', 'Male', '666 Elmwood Ave', 'teacherpass9'),
-    ('Emily', 'Gonzalez', 'Female', '777 Maplewood Blvd', 'teacherpass10'),
-    ('Ethan', 'Anderson', 'Male', '888 Pinecrest Ct', 'teacherpass11'),
-    ('Mia', 'Moore', 'Female', '999 Cedarwood Ave', 'teacherpass12'),
-    ('Aiden', 'Harris', 'Male', '1010 Birch St', 'teacherpass13'),
-    ('Ava', 'Lee', 'Female', '1111 Elm Rd', 'teacherpass14'),
-    ('Logan', 'Wilson', 'Male', '1212 Maple Ave', 'teacherpass15'),
-    ('Harper', 'Taylor', 'Female', '1313 Pine St', 'teacherpass16');
-
-INSERT INTO Students (FirstName, LastName, Gender, Address, Password)
-VALUES
-    ('Elijah', 'Thomas', 'Male', '1414 Oak St', 'studentpass7'),
-    ('Scarlett', 'White', 'Female', '1515 Elm Rd', 'studentpass8'),
-    ('Benjamin', 'Harris', 'Male', '1616 Maple Ave', 'studentpass9'),
-    ('Chloe', 'Walker', 'Female', '1717 Pine St', 'studentpass10'),
-    ('Henry', 'Young', 'Male', '1818 Oakwood Dr', 'studentpass11'),
-    ('Grace', 'Scott', 'Female', '1919 Elm St', 'studentpass12'),
-    ('Jackson', 'Wright', 'Male', '2020 Maple Rd', 'studentpass13'),
-    ('Lily', 'Lewis', 'Female', '2121 Pine Ave', 'studentpass14'),
-    ('Sebastian', 'King', 'Male', '2222 Oakwood Ct', 'studentpass15'),
-    ('Zoe', 'Green', 'Female', '2323 Elm Rd', 'studentpass16');
-
-INSERT INTO Students (FirstName, LastName, Gender, Address, Password)
-VALUES
-    ('Liam', 'Rodriguez', 'Male', '2424 Pine St', 'studentpass17'),
-    ('Olivia', 'Hernandez', 'Female', '2525 Oakwood Dr', 'studentpass18'),
-    ('Noah', 'Gonzalez', 'Male', '2626 Elm Rd', 'studentpass19'),
-    ('Emma', 'Smith', 'Female', '2727 Maple Ave', 'studentpass20'),
-    ('Oliver', 'Lopez', 'Male', '2828 Pinecrest Ct', 'studentpass21'),
-    ('Ava', 'Garcia', 'Female', '2929 Cedarwood Ave', 'studentpass22'),
-    ('Elijah', 'Rivera', 'Male', '3030 Birch St', 'studentpass23'),
-    ('Charlotte', 'Moore', 'Female', '3131 Elm Rd', 'studentpass24'),
-    ('James', 'Clark', 'Male', '3232 Maple Ave', 'studentpass25'),
-    ('Sophia', 'Anderson', 'Female', '3333 Pine St', 'studentpass26');
 
 INSERT INTO Classes (ClassName, TeacherID)
 VALUES
@@ -125,17 +126,5 @@ VALUES
     (3, 15, 15, '2023-05-15'),
     (6, 16, 1, '2023-05-16');
 
-INSERT INTO Students (FirstName, LastName, Gender, Address, Password)
-VALUES
-    ('Alex', 'Taylor', 'Non-binary', '3434 Oakwood Dr', 'studentpass27'),
-    ('Charlie', 'Lee', 'Non-binary', '3535 Elm St', 'studentpass28'),
-    ('Taylor', 'Smith', 'Non-binary', '3636 Maple Ave', 'studentpass29'),
-    ('Jordan', 'Garcia', 'Non-binary', '3737 Pine St', 'studentpass30'),
-    ('Sawyer', 'Jones', 'Non-binary', '3838 Oakwood Dr', 'studentpass31'),
-    ('Riley', 'Miller', 'Non-binary', '3939 Elm Rd', 'studentpass32'),
-    ('Casey', 'Wilson', 'Non-binary', '4040 Maple Ave', 'studentpass33'),
-    ('Finley', 'Brown', 'Non-binary', '4141 Pine St', 'studentpass34'),
-    ('Jamie', 'Davis', 'Non-binary', '4242 Oak St', 'studentpass35'),
-    ('Avery', 'Thomas', 'Non-binary', '4343 Elmwood Ave', 'studentpass36');
 
 
