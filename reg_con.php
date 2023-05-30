@@ -1,5 +1,5 @@
 <?php
-            require_once "../../scripts/connect.php";
+            require_once "./connect.php";
             $sql = "SELECT * FROM cities";
             $result = $conn -> query($sql);
             while($city = $result -> fetch_assoc()){
