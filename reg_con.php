@@ -10,6 +10,6 @@
 
 require_once "./connect.php";
 
-$stmt = $conn->prepare(query: "INSERT INTO `users` (`city_id`, `firstName`, `lastName`, `password`, `birthday`, `created_at`) VALUES (?, ?, ?, ?, ?, ?, current_timestamp());");
+$stmt = $conn->prepare(query: "INSERT INTO `students` (`FirstName`, `LastName`, `Gender`, `Address`, `Password`, `Email`) VALUES (?, ?, ?, ?, ?, ?, ?);");
 
 if($_POST["email"]);

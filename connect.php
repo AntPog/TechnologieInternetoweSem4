@@ -1,9 +1,9 @@
 <?php
 // Dane do połączenia z bazą danych
 $servername = "localhost";
-$username = "nazwa_uzytkownika";
-$password = "haslo";
-$dbname = "nazwa_bazy_danych";
+$username = "root";
+$password = "";
+$dbname = "faggot3";
 
 // Tworzenie połączenia
 $conn = new mysqli($servername, $username, $password, $dbname);

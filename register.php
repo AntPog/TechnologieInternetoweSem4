@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Rejestracja</title>
+    <i class="fa-regular fa-volume-up"></i>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h2>Rejestracja</h2>
@@ -10,7 +12,6 @@
           <input type="text" class="form-control" placeholder="Imię" name="firstName">
           <div class="input-group-append">
             <div class="input-group-text">
-              <span class="fas fa-user"></span>
             </div>
           </div>
         </div>
@@ -18,7 +19,6 @@
           <input type="text" class="form-control" placeholder="Nazwisko" name="lastName">
           <div class="input-group-append">
             <div class="input-group-text">
-              <span class="fas fa-user"></span>
             </div>
           </div>
         </div>
@@ -26,7 +26,6 @@
           <input type="password" class="form-control" placeholder="Hasło" name="password">
           <div class="input-group-append">
             <div class="input-group-text">
-              <span class="fas fa-lock"></span>
             </div>
           </div>
         </div>
@@ -34,7 +33,6 @@
           <input type="password" class="form-control" placeholder="Potwierdź hasło" name="confirmPassword">
           <div class="input-group-append">
             <div class="input-group-text">
-              <span class="fas fa-lock"></span>
             </div>
           </div>
         </div>
@@ -42,7 +40,6 @@
           <input type="date" class="form-control" name="birthday">
           <div class="input-group-append">
             <div class="input-group-text">
-              <span class="fas fa-calendar-alt"></span>
             </div>
           </div>
         </div>

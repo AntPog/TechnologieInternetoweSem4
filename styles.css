@@ -1,0 +1,83 @@
+/* CSS Styles for Registration Form */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e890c6;
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .form-control {
+    width: 30%;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .input-group {
+    margin-bottom: 10px;
+  }
+  
+  .input-group-text {
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .input-group-append {
+    display: flex;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .icheck-primary {
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+  }
+  
+  .btn {
+    height: 40px;
+  }
+  
+  .btn-primary {
+    background-color: #97105a;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .text-center {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  /* Additional Styles */
+  input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 0;
+    opacity: 0.6;
+    cursor: pointer;
+  }  
