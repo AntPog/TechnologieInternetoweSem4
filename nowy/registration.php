@@ -10,7 +10,7 @@ if (isset($_SESSION["user"])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
+    <title>Formularz Rejestracyjny</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -35,7 +35,7 @@ if (isset($_SESSION["user"])) {
             array_push($errors, "Email is not valid");
            }
            if (strlen($password)<1) {
-            array_push($errors,"Password must be at least 8 charactes long"); //potem zmienic znowu na 8 ale debugging  XDD
+            array_push($errors,"Password must be at least 8 charactes long"); //potem zmienic znowu na 8 ale debugging  XDD looooooooooool xDD
            }
            if ($password!==$passwordRepeat) {
             array_push($errors,"Password does not match");
@@ -64,32 +64,34 @@ if (isset($_SESSION["user"])) {
                 die("Something went wrong");
             }
            }
-          
-
         }
         ?>
         <form action="registration.php" method="post">
+        <h1>Rejestracja</h1>
             <div class="form-group">
-                <input type="text" class="form-control" name="firstName" placeholder="Imie:">
+                <input type="text" class="form-control" name="firstName" placeholder="Imię">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="lastName" placeholder="Nazwisko:">
+                <input type="text" class="form-control" name="lastName" placeholder="Nazwisko">
             </div>
             <div class="form-group">
-                <input type="emamil" class="form-control" name="email" placeholder="Email:">
+                <input type="emamil" class="form-control" name="email" placeholder="Email">
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" name="password" placeholder="Password:">
+                <input type="emamil" class="form-control" name="address" placeholder="Adres">
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" name="repeat_password" placeholder="Repeat Password:">
+                <input type="password" class="form-control" name="password" placeholder="Hasło">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="repeat_password" placeholder="Potwierdź hasło">
             </div>
             <div class="form-btn">
-                <input type="submit" class="btn btn-primary" value="Register" name="submit">
+                <input type="submit" class="btn btn-primary" value="Zarejestruj się" name="submit">
             </div>
         </form>
         <div>
-        <div><p>Already Registered <a href="login.php">Login Here</a></p></div>
+        <div><p>Mam już konto <a href="login.php">Zaloguj się</a></p></div>
       </div>
     </div>
 </body>
